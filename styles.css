@@ -1,0 +1,99 @@
+/*putting body of page in a flex*/
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(240, 227, 208);
+}
+
+footer {
+    margin-top: 70px;
+}
+ 
+p {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+h1 {
+    font-size: 54px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: bold;
+    
+}
+
+
+a {
+    color:blue;
+    text-decoration: none;
+    font-size: 22px;
+}
+/*changing the link color on hover*/
+a:hover {
+    color:red;
+    text-decoration: none;
+
+}
+/*creating flex inside of flex for navigation*/
+.horizontal-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    justify-content: center;
+}
+
+.horizontal-nav a {
+    text-decoration: none;
+    color: #2a079e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.horizontal-nav a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/*making responsive*/
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*making navigation vertical on mobile for responsiveness*/
+@media (max-width: 768px) {
+    .horizontal-nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
